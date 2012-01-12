@@ -33,6 +33,6 @@ public class NearestN {
         log.info("Rectangle " + i + " " + rects[i] + ", distance=" + rects[i].distance(p));
         return true;
       }
-    }, 10, Float.MAX_VALUE);
+    }, 3, Float.MAX_VALUE);
   }
 }
