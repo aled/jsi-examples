@@ -1,11 +1,11 @@
-package net.sourceforge.jsi.examples;
+package net.sf.jsi.examples;
 
 import org.slf4j.*;
-import com.infomatiq.jsi.*;
-import gnu.trove.*;
+import net.sf.jsi.*;
+import gnu.trove.procedure.*;
 
-import com.infomatiq.jsi.Rectangle;
-import com.infomatiq.jsi.rtree.RTree;
+import net.sf.jsi.Rectangle;
+import net.sf.jsi.rtree.RTree;
 
 public class NearestN {
   private static final Logger log = LoggerFactory.getLogger(NearestN.class);

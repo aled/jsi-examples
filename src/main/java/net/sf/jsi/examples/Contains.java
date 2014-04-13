@@ -1,15 +1,15 @@
-package net.sourceforge.jsi.examples;
+package net.sf.jsi.examples;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.*;
-import com.infomatiq.jsi.*;
+import net.sf.jsi.*;
 
-import gnu.trove.*;
+import gnu.trove.procedure.*;
 
-import com.infomatiq.jsi.Rectangle;
-import com.infomatiq.jsi.rtree.RTree;
+import net.sf.jsi.Rectangle;
+import net.sf.jsi.rtree.RTree;
 
 public class Contains {
   private static final Logger log = LoggerFactory.getLogger(Contains.class);
@@ -46,8 +46,7 @@ public class Contains {
     // into a list, so that's what the execute() method does.
     class SaveToListProcedure implements TIntProcedure {
       private List<Integer> ids = new ArrayList<Integer>();
-      
-      @Override
+
       public boolean execute(int id) {
         ids.add(id);
         return true;

@@ -2,9 +2,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>net.sourceforge.jsi</groupId>
+  <groupId>net.sf.jsi</groupId>
   <artifactId>jsi-examples</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>jsi</name>
@@ -20,11 +20,11 @@
       <name>maven central</name>
       <url>http://uk.maven.org/maven2</url>
     </repository>
-    
+
     <repository>
-      <id>jsi.sourceforge.net</id>
-      <name>sourceforge jsi repository</name>
-      <url>http://sourceforge.net/projects/jsi/files/m2_repo</url>
+      <id>sonatype</id>
+      <name>Sonatype repository</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
     </repository>
   </repositories>
        
@@ -58,7 +58,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>net.sourceforge.jsi.examples.NearestN</mainClass>
+              <mainClass>net.sf.jsi.examples.NearestN</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>
@@ -84,7 +84,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>net.sourceforge.jsi.examples.NearestN</mainClass>
+              <mainClass>net.sf.jsi.examples.NearestN</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -104,9 +104,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>net.sourceforge.jsi</groupId>
+      <groupId>net.sf.jsi</groupId>
       <artifactId>jsi</artifactId>
-      <version>1.0.0</version>
+      <version>1.1.0-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
   
