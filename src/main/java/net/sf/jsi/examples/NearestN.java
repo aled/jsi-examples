@@ -1,11 +1,14 @@
 package net.sf.jsi.examples;
 
-import org.slf4j.*;
-import net.sf.jsi.*;
-import gnu.trove.procedure.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import net.sf.jsi.Rectangle;
+import gnu.trove.procedure.TIntProcedure;
+
+import net.sf.jsi.SpatialIndex;
 import net.sf.jsi.rtree.RTree;
+import net.sf.jsi.Rectangle;
+import net.sf.jsi.Point;
 
 public class NearestN {
   private static final Logger log = LoggerFactory.getLogger(NearestN.class);

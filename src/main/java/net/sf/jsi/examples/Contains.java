@@ -3,13 +3,14 @@ package net.sf.jsi.examples;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.slf4j.*;
-import net.sf.jsi.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import gnu.trove.procedure.*;
+import gnu.trove.procedure.TIntProcedure;
 
-import net.sf.jsi.Rectangle;
+import net.sf.jsi.SpatialIndex;
 import net.sf.jsi.rtree.RTree;
+import net.sf.jsi.Rectangle;
 
 public class Contains {
   private static final Logger log = LoggerFactory.getLogger(Contains.class);
